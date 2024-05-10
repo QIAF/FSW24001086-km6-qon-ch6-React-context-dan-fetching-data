@@ -1,27 +1,16 @@
-import './App.css'
-import Heroes from './components/Heroes'
-import Navbar from './components/Navbar'
-import OurService from './components/OurService'
-import WhyUs from './components/WhyUs'
-import Testimonial from './components/Testimonial'
-import Banner from './components/Banner'
-import Faq from './components/Faq'
-import Footer from './components/Footer'
-
-
+import '../src/Pages/LandingPages/LandingPage.css'
+import { Route, Routes } from 'react-router'
+import LandingPage from './Pages/LandingPages/LandingPage'
+import Search from './components/Search'
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Heroes/>
-      <OurService/>
-      <WhyUs/>
-      <Testimonial/>
-      <Banner/>
-      <Faq/>
-      <Footer/>
+    <Routes>
+      <Route path='/' element {<LandingPage/>}/>
+      <Route path='/search' element {<Search/>}/>
+    </Routes>
     </>
   )
 }
