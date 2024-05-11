@@ -1,6 +1,13 @@
+import { useNavigate } from 'react-router'
 import ImgCar from '../assets/img_car.png'
 
-function Heroes(){
+function Heroes () {
+
+    const navigate = useNavigate();
+
+    const handleClick = () =>{
+        navigate("/search")
+    }
     return(
         <section id="heroes">
         <div className="car-heroes mb-5">
@@ -25,7 +32,7 @@ function Heroes(){
                     terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
                     untuk sewa mobil selama 24 jam.
                 </p>
-                <button type="button" className="btn-landing-page">
+                <button type="button" className="btn-landing-page" onClick={handleClick}>
                     Mulai Sewa Mobil
                 </button>
                 </div>

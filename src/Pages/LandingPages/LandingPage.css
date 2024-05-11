@@ -1,7 +1,13 @@
 body {
-    font-family: Helvetica, sans-serif;
-
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
+
+main {
+    background-color: #F1F3FF;
+    min-height: 500px;
+}
+
+/* awal */
 
 @media(max-width:600px) {
     .container-lg {
@@ -18,13 +24,6 @@ body {
 
 #heroes {
     background-color: #F1F3FF;
-}
-
-#hero-detail-mobil,
-#hero-pembayaran,
-#hero-hasil-pencarian {
-    background-color: #F1F3FF;
-
 }
 
 /* mengatur jarak row-car keatas */
@@ -81,85 +80,112 @@ body {
     background-color: #0D28A6;
     color: #F1F3FF;
     border-radius: 13px;
-    margin-top: 50px;
 }
 
-#pricing {
-    width: Fixed(1, 047px);
-}
 
-.col-lg-8 {
-    border-radius: 8px
-}
+/* akhir */
 
-.w-100 {
-    background-color: #0D28A6;
-}
-
-.btn-pilih-mobil,
-.btn-lanjutkan-bayar1 {
+.btn-utama {
     background-color: #5CB85F;
-    color: #F1F3FF;
-    border: none;
+    color: #ffff;
+    border-radius: 0;
 }
 
-
-/* Bagian cari mobil */
-/* box bisa keatas karena margin top -50 (seusaikan) */
-
-.cari-mobil-panel {
-    background-color: #5CB85F;
-    color: #F1F3FF;
-    border-radius: 3px;
-    border: none;
-}
-
-.info-panel1 {
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    margin-top: -90px;
+.btn-utama:hover {
+    color: #5CB85F;
     background-color: #FFFFFF;
+    border: 1px solid #5CB85F;
 }
 
-.btn-cari-mobil {
-    background: #5CB85F;
-    color: #FFFFFF;
-    border: 0;
-    position: absolute;
+.sewa {
+    margin-top: 100px;
+}
+
+.sewa .container {
+    background-color: #0D28A6;
+    border-radius: 10px;
+}
+
+.sewa .container p {
+    line-height: 20px;
+    padding: 0 420px;
+    font-size: 14px;
+}
+
+.search {
+    margin-top: -80px;
+}
+
+.search .search__card {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.search .search__card .search__time .form-select {
+    background-image: url("../images/fi_clock.png");
+    background-size: 20px auto;
+}
+
+.search .search__card .form-select:hover {
+    border: 1px solid #5CB85F;
     border-radius: 2px;
-
 }
 
-/* Bagian detail mobil1 */
-.info-panel2 {
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+.search .search__card .form-select option:hover,
+.search .search__card .form-select option:checked {
+    background: #C9E7CA;
+    color: #5CB85F;
+}
+
+.cars {
+    margin-top: 30px;
+}
+
+.cars .card {
+    width: 340px;
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    margin-top: -90px;
-    background-color: #FFFFFF;
-    ;
 }
 
-.btn-lanjutkan-bayar1 {
-    position: relative;
+.cars .card .card-img-top {
+    width: 320px;
+    height: 180px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
-.card-tiket {
-    background-color: #0D28A6;
+.cars .card .cars__p {
+    font-size: 14px;
+    line-height: 20px;
+    height: 100px;
 }
 
-.pembayaran-berhasil {
-    width: 605px;
-    height: 290px;
-    margin: auto;
-}
+@media (max-width: 1199px) {
+    .sewa {
+        margin-top: 100px;
+    }
 
-/* Hasil pencarian */
-.info-panel-hasil-pencarian,
-.info-panel-pembayaran,
-.infopanel-detail-mobil {
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    margin-top: -50px;
-    background-color: #FFFFFF;
+    .sewa .container {
+        background-color: #0D28A6;
+        border-radius: 10px;
+    }
 
+    .sewa .container p {
+        line-height: 20px;
+        padding: 0 200px;
+        font-size: 14px;
+    }
+
+    .cars .card {
+        width: 280px;
+        -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .cars .card .card-img-top {
+        width: 260px;
+    }
 }

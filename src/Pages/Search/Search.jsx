@@ -1,6 +1,14 @@
+import { useContext } from "react"
+import { CarsContext } from "../contexts/CarsContext"
+import '../LandingPages/LandingPage.css'
+
 function Search(){
+    const {data} = useContext(CarsContext)
+    console.log(data)
+
     return(
         <section className="search">
+
         <div className="container">
             <div className="row">
             <div className="col-lg-12 col-12">
@@ -70,6 +78,7 @@ function Search(){
             </div>
         </div>
         </section>
+
 
     )
 }
