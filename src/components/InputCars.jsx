@@ -22,34 +22,39 @@ function InputCars() {
     }, []);
     return(
 
-        <div>
-            <img src="" className="card-img-top" alt="Car" />
+        <div className='container-search'>
             {data.map((cars) =>(
-                <div key={cars.id}>
-
-                    <div className="card" style={{ width: "18rem" }}>
-                        <img src={`src/assets/cars/${cars.image}`} className="card-img-top" alt="Car" />
-                        <div className="card-body">
-                            <h5 className="card-title">{cars.plate}</h5>
-                            <p className="card-text">{cars.description}</p>
-                            <div className="col-10 ms-lg-2">orang</div>
+                <div key={cars.id} className='container'>
+                    <div className='row-flex items-center'>
+                        <div className="card px-2 py-4" style={{ width: "18rem" }}>
+                            <img src={`src/assets/carsImg/${cars.image}`} className="card-img-top mt-4" alt="Car" />
+                            <div className="card-body">
+                                <h5 className="card-title fs-6">{cars.manufacture}/ {cars.model}</h5>
+                                <h5 className="card-title fs-5">{cars.rentPerDay} / hari</h5>
+                                <p className="card-text">{cars.description}</p>
                             <div className="row mt-2">
-                            <div className="col-1">
-                            <img src="src/images/fi_settings.png" width="20px" alt="" srcSet="" />
+                                <div className="col-1">
+                                <img src="src/assets/fi_calendar.png" width="20px" alt="" srcSet="" />
+                                </div>
+                                <div className="col-10 ms-lg-2">Orang {cars.capacity}</div>
                             </div>
-                            <div className="col-10 ms-lg-2"></div>
-                        </div>
-                        <div className="row mt-2 mb-4">
-                            <div className="col-1">
-                            <img src="/assets/fi_calendar.svg" width="20px" alt="" srcSet="" />
+                            <div className="row mt-2">
+                                <div className="col-1">
+                                <img src="src/assets/fi_settings.png" width="20px" alt="" srcSet="" /></div>
+                                <div className="col-10 ms-lg-2">{cars.transmission}</div>
                             </div>
-                            <div className="col-10 ms-lg-2">Tahun</div>
+                            <div className="row mt-2 mb-3">
+                                <div className="col-1">
+                                <img src="src/assets/fi_calendar.png" width="20px" alt="" srcSet="" />
+                                </div>
+                                <div className="col-10 ms-lg-2">Tahun {cars.year}</div>
+                            </div>
+                            <button type="button" className="btn-search"> Pilih Mobil</button>
+
+                            </div>
                         </div>
-                            <a href="#" className="btn btn-primary">
-                            Go somewhere
-                            </a>
-                        </div>
-                        </div>
+
+                    </div>
 
                 </div>
 
