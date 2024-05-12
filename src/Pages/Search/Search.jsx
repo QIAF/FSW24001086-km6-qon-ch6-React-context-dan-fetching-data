@@ -42,6 +42,7 @@ function Search(){
                     className="form-select"
                     aria-label="Default select example"
                     id="waktuJemput"
+                    typeof="date"
                     >
                     <option value="false" selected="">
                         Pilih Waktu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -64,7 +65,7 @@ function Search(){
                         defaultValue={0}
                     />
                     <span className="input-group-text bg-white">
-                        <img src="images/fi_users.png" width="20px" alt="" />
+                        <img src="src/assets/fi_users.png" width="20px" alt="" />
                     </span>
                     </div>
                 </div>
